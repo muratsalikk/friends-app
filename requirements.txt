@@ -1,6 +1,6 @@
-apturl==0.5.2
-arrow==0.14.4
-asgiref==3.2.7
+apturl
+arrow
+asgiref
 asn1crypto==0.24.0
 astroid==2.4.1
 attrs==19.3.0
