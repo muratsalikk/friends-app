@@ -15,7 +15,6 @@ click==7.1.2
 colorama==0.4.1
 configobj==5.0.6
 cryptography==2.1.4
-cupshelpers==1.0
 daemonocle==1.0.1
 decorator==4.4.2
 defer==1.0.6
