@@ -1,0 +1,95 @@
+/* grid settings */
+
+.wrapper{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 0.1fr repeat(30, 1fr) 0.1fr;
+    grid-auto-rows:minmax(50px, auto);
+    gap: 5px;
+}
+
+body{
+    margin: 0px;
+}
+
+/* base.html items */
+
+header{
+    position: fixed;
+    display: inline-flex;
+    grid-column: 1/12;
+    grid-row: 1/1;
+    background: rgb(80, 93, 95);
+    height: 3em;
+    padding-top: 3px;
+    width: 100vw;
+    box-shadow: 0 0 7px 0px black;
+}
+
+#logo{
+    height: 3em;
+    grid-column: 2;
+}
+
+#title{
+    color: white;
+    padding-left: 1em;
+    grid-column: 4/20;
+}
+
+#widget1{
+    background: green;
+    grid-column: 2/6;
+    grid-row: 2;
+}
+
+#widget2{
+    background: indigo;
+    grid-column: 7/11;
+    grid-row: 2;
+}
+
+div.content{
+    grid-column: 2/22;
+    grid-row-start: 3;
+    word-break:break-word;
+    display: block;
+    background: gray;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-auto-rows:minmax(50px, auto);
+    gap: 5px;
+}
+
+aside{
+    grid-column: 23/31;
+    grid-row: 3;
+}
+
+/* list.html objects */
+
+#mevzu-head {
+    grid-row: 1;
+    grid-column: 1/21;
+    background: lightcoral;
+}
+
+#mevzu{
+    grid-column: 1/21;
+}
+
+.summary{
+    grid-column: 1/21;
+}
+
+.content > div:nth-child(odd){
+    background: coral;
+}
+
+
+.wrap > div{
+    background:#eee;
+    padding:1em;
+  }
+  .wrap > div:nth-child(odd){
+    background:#ddd;

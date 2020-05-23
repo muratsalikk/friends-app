@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link href="{% static "css/blog.css" %}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="main">
+                <div class="wrapper">
+                <img src="{% static "media/logo2.png" %}" id="logo">
+                <p id="title">HOMEPAGE FOR ONLINE CEKIRDEK KOLA</p>
+            </div>
+            </header>
+            <aside id="sidebar">
+                <img src="{% static "media/logo.png" %}" id="profilePic">
+                <h1> My Profile </h1>
+                <p>This is my blog.</p>
+                <p>The second line.</p>
+            </aside>
+            <div id="widget1">
+                Widget area 1
+            </div>
+            <div id="widget2">
+                Widget area 2 
+            </div>
+            <div class="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </body>
+    </html>
