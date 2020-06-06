@@ -19,7 +19,7 @@ daemonocle==1.0.1
 decorator==4.4.2
 defer==1.0.6
 defusedxml==0.6.0
-Django==3.0.6
+Django==3.0.7
 django-gunicorn==0.1.1
 docutils==0.14
 entrypoints==0.3
